@@ -1,0 +1,68 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Amino - Organic & Multipurpose Bootstrap 5 Template
+    Author: Hastech IT
+    Author URL: https://themeforest.net/user/hastech
+    Support: https://hasthemes.com/contact-us/
+    Description: Organic & Multipurpose Bootstrap 5 Template
+    Version: 1.1
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    01. Theme default CSS
+	02. Component CSS
+		2.1 - Button CSS
+		2.2 - Form CSS
+		2.3 - Blockquote CSS
+		2.4 - Quick View CSS
+	03. Header CSS
+		3.1 - Header Top CSS
+		3.2 - Header Bottom CSS
+		3.3 - Header Mobile CSS
+		3.4 - Off Canvas CSS
+		3.5 - Header Media CSS
+	04. Pages CSS (All Page Styles)
+		4.1 - Slider CSS
+		4.2 - Banner CSS
+		4.3 - Category CSS
+		4.4 - Features CSS
+		4.5 - Product CSS
+		4.6 - Discount Countdown CSS
+		4.7 - Testimonial CSS
+		4.8 - Blog CSS
+		4.9 - Page Banner CSS
+		4.10 - About CSS
+		4.11 - Shop CSS
+		4.12 - Shop Single CSS
+		4.13 - Cart CSS
+		4.14 - Checkout CSS
+		4.15 - My Account CSS
+		4.16 - Compare CSS
+		4.17 - Login & Register CSS
+		4.18 - Blog Details CSS
+		4.19 - Contact CSS
+	05. Widget CSS
+		5.1 - Sidebar Widget CSS
+		5.2 - Footer Widget CSS
+	06. Footer CSS
+
+-----------------------------------------------------------------------------------*/
+@import "./bootstrap/functions";
+@import "variabls";
+@import "custom-variables";
+@import "./bootstrap/bootstrap";
+
+
+@import "common";
+@import "component";
+@import "header";
+@import "page";
+@import "widget";
+@import "footer";
+
+
+
+

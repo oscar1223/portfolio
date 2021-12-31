@@ -1,0 +1,63 @@
+/*--
+/*  4.9 - Page Banner CSS
+/*----------------------------------------*/
+
+// Page Banner Wrapper
+.page-banner-wrapper{
+    background-position: center left;
+    
+    @media #{$tablet-device, $large-mobile}{
+        margin-top: 126px;
+    }
+}
+
+// Page Banner 
+.page-banner{
+    padding: 110px 0;
+
+    
+    @media #{$tablet-device}{
+        padding: 80px 0;
+    }
+
+    @media #{$large-mobile}{
+        padding: 60px 0;
+    }
+}
+
+// Breadcrumb 
+.breadcrumb{
+    margin-bottom: 0;
+    
+    & .breadcrumb-item{
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 0;
+
+        & a{            
+            display: inline-block;
+            color: #253237;
+            transition: all 0.3s linear;
+            
+            &:hover{
+                color: $primary;
+            }
+        }
+        &.active{
+            color: $primary;
+        }
+
+        & + .breadcrumb-item{
+            &::before{
+                content: "\f105";
+                font-family: 'Line Awesome Free';
+                font-weight: 900;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+
+
+

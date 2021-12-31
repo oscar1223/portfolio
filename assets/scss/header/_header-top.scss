@@ -1,0 +1,152 @@
+/*--
+/*  3.1 - Header Top CSS
+/*----------------------------------------*/
+
+// Top Notification Bar 
+.top-notification-bar{
+    position: relative;
+    background-color: $dark;
+    padding: 14px 0 16px;
+
+    @media #{$large-mobile}{
+        padding: 12px 0 14px;
+    }
+
+    & .notification-close{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+
+        @media #{$large-mobile}{
+            right: 15px;
+        }
+
+        & .notification-close-btn{
+            padding: 0;
+            border: 0;
+            font-size: 16px;
+            color: $white;
+            background: none;
+        }
+    }
+}
+
+// Notification Entry 
+.notification-entry{
+    @media #{$large-mobile}{
+        padding: 0 30px;
+    }
+    & p{
+        color: $white;
+
+        @media #{$large-mobile}{
+            font-size: 11px;
+        }
+
+        & a{
+            color: $primary;
+        }
+        & span{
+            color: #f02720;
+        }
+    }
+}
+
+// Header Top 
+.header-top{
+    background-color: $dark;
+    padding: 16px 0;
+}
+.header-top-02{
+    background-color: $white;
+    padding: 16px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+// Header Top 
+.header-top-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    & .header-language-currency-selector{
+        & > *{
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        & .dropdown{
+            & a{
+                color: $white;
+            }
+
+            & .dropdown-menu{
+                left: auto !important;
+                right: 0 !important;
+            }
+        }
+    }
+}
+.header-top-wrapper-02{
+    display: flex;
+    justify-content: space-between;
+
+    & .header-language-currency-selector{
+        & > *{
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        & .dropdown{
+            & a{
+                color: #626262;
+            }
+
+            & .dropdown-menu{
+                left: auto !important;
+                right: 0 !important;
+            }
+        }
+    }
+}
+
+// Static Nav 
+.static-nav{
+    & p{
+        color: $white;
+        font-size: 13px;
+
+        @media #{$large-mobile}{
+            font-size: 11px;
+        }
+
+        & a{
+            color: $primary;
+        }
+        & span{
+            color: #f02720;
+        }
+    }
+}
+// Static Nav 
+.static-nav-02{
+    & p{
+        color: #626262;
+        font-size: 13px;
+
+        @media #{$large-mobile}{
+            font-size: 11px;
+        }
+
+        & a{
+            color: $primary;
+        }
+        & span{
+            color: #f02720;
+        }
+    }
+}
+
+
+
+

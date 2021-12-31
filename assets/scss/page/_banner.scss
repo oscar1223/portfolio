@@ -1,0 +1,66 @@
+/*--
+/*  4.2 - Banner CSS
+/*----------------------------------------*/
+
+// Single Banner 
+.single-banner{
+    position: relative;
+
+    &::before {
+        content: "";
+        background: rgba($white, 0.3);
+        bottom: 50%;
+        top: 50%;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        transition: all 900ms linear;
+    }
+    &::after {
+        content: "";
+        background: rgba($white, 0.3);
+        left: 50%;
+        right: 50%;
+        top: 0;
+        bottom: 0;
+        pointer-events: none;
+        transition: all 900ms linear;
+    }
+    &:hover{
+        &::after,
+        &::before{
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all 900ms linear;
+            opacity: 0;
+        }
+    }
+    & a{
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// Single Banner 
+.banner-wrapper{
+    & .banner-col1{
+        width: 48.5%;
+
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+    }
+    & .banner-col2{
+        width: 50.6%;
+
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+    }
+}
+

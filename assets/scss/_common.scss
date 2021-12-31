@@ -1,0 +1,290 @@
+/*----------------------------------------*/
+/*  01. Template default CSS
+/*----------------------------------------*/
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+/*-- Google Font --*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/*-- Common Style --*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    visibility: visible;
+    outline: none;
+
+    color: "";
+    &[dir="rtl"] {
+        text-align: right;
+    }
+}
+
+a,
+button {
+    transition: $transition-base;
+    outline: 0;
+
+    &:focus{
+        outline: 0;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+ul,ol{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Section Style */
+.main-wrapper,
+.section{
+    float: left;
+    width: 100%;
+}
+.main-wrapper{
+    position: relative;
+}
+.page-wrapper{
+    padding: 0 0 0 370px;
+    overflow: hidden;
+    background-color: #f6f8fa;
+
+    @media #{$laptop-device}{
+        padding: 0 0 0 270px;
+    }
+    @media #{$desktop-device}{
+        padding: 0 0 0 230px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+        padding: 0;
+    }
+}
+
+/* Section Spacing */
+.custom-container{
+    @media #{$extraBig-device}{
+        max-width: 1920px;
+        padding: 0 90px;
+    }
+    @media #{$laptop-device}{
+        padding: 0 50px;
+    }
+}
+
+/* Section Spacing */
+.bg-cover{
+    background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;    
+}
+
+/* Section Spacing */
+.section-padding {
+    padding-top: 100px;
+    @media #{$tablet-device} {
+        padding-top: 80px;
+    }
+    @media #{$large-mobile} {
+        padding-top: 60px;
+    }
+}
+.section-padding-02 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media #{$tablet-device} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media #{$large-mobile} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.section-margin {
+    margin-top: 100px;
+    @media #{$tablet-device} {
+        margin-top: 80px;
+    }
+    @media #{$large-mobile} {
+        margin-top: 60px;
+    }
+}
+.section-margin-02 {
+    margin-top: 100px;
+    @media #{$tablet-device} {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    @media #{$large-mobile} {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+/* tab Content */
+.tab-content{
+    & .tab-pane{
+        display: block;
+        overflow: hidden;
+        height: 0;
+        visibility: hidden;
+        max-width: 100%;
+        opacity: 0;
+        
+        &.active{
+            height: auto;
+            visibility: visible;
+            opacity: 1;
+            overflow: visible;
+        }
+    }
+}
+
+// Section Title 
+.section-title{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 50px;    
+
+    &::before {
+        content: "";
+        background: url(../images/bg-title.png) no-repeat;
+        background-position: center center;
+        width: 315px;
+        height: 25px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+
+        @media #{$small-mobile}{
+            width: 250px;
+        }
+    }
+
+    & .sub-title{
+        font-size: 36px;
+        font-family: $font-family-code;
+        color: $primary;
+        margin-bottom: 7px;
+        display: inline-block;
+        line-height: 1.2;
+
+        @media #{$large-mobile}{
+            font-size: 28px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+    }
+    & .title{
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 32px;
+        color: $dark;
+        text-transform: uppercase;
+        margin-bottom: 0;
+
+        @media #{$large-mobile}{
+            font-size: 28px;
+        }
+        @media #{$small-mobile}{
+            font-size: 22px;
+        }
+    }
+
+    &.title-shape-none{
+        padding-bottom: 0;
+
+        &::before {
+            display: none;
+        }
+        & .title{
+            font-size: 24px;
+
+            @media #{$large-mobile}{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+// Page Pagination
+.page-pagination{}
+
+.pagination{
+    margin-top: 60px;
+
+    & .page-item{
+        margin: 0 3px;
+
+        & .page-link{
+            font-weight: 400;
+            color: #253237;
+            padding: 0;
+            height: 36px;
+            line-height: 36px;
+            background: #f6f6f6;
+            font-size: 14px;
+            display: inline-block;
+            width: 36px;
+            border-radius: 100%;
+            text-align: center;
+            vertical-align: top;
+            border: 0;
+            transition: all 0.3s linear;
+            &:hover,
+            &.active{
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+    
+}
+

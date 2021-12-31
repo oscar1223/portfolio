@@ -1,11 +1,10 @@
 function setup() {
-  canvas = createCanvas(400, 400, WEBGL);
+  canvas = createCanvas(300, 300, WEBGL);
 } 
-
 
 function draw(){
 
-  background(20,);
+  background(20);
   normalMaterial();
   translate(20, 0, 0);
   push();
@@ -19,5 +18,5 @@ function draw(){
 }
 
 window.onresize = function() {  
-  canvas.size(400, 400);
+  canvas.size(300, 300);
 }

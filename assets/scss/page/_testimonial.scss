@@ -1,0 +1,91 @@
+/*--
+/*  4.7 - Testimonial CSS
+/*----------------------------------------*/
+
+// Testimonial Section
+.testimonial-section{
+    background-repeat: no-repeat;    
+
+    @media #{$desktop-device}{
+        background-size: 100% 60%;
+    }
+    @media #{$tablet-device}{
+        background-size: 100% 50%;
+    }
+    @media #{$large-mobile}{
+        background-size: 100% 40%;
+    }
+    @media #{$small-mobile}{
+        background-size: 100% 20%;
+    }
+}
+
+// Testimonial Wrapper
+.testimonial-wrapper{
+    background-color: $white;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 100px 30px;
+
+    @media #{$tablet-device} {
+        padding: 80px 30px;
+    }
+    @media #{$large-mobile} {
+        padding: 60px 30px;
+    }
+    @media #{$small-mobile}{
+        padding: 60px 15px;
+    }
+}
+
+// Single Testimonial
+.single-testimonial{
+    text-align: center;
+    margin-top: 30px;
+    
+    & .name{
+        position: relative;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1;
+        color: $dark;
+        display: block;
+        margin-bottom: 28px;
+        text-transform: capitalize;
+        display: inline-block;
+        padding-top: 60px;
+
+        &::before {
+            content: "";
+            background: url(../images/quote.png) no-repeat;
+            width: 41px;
+            height: 32px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: 0 auto;
+        }
+    }
+    & p{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #555555;
+        margin-bottom: 45px;
+        font-style: italic;        
+    }
+    & .test-email{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: capitalize;
+        color: $primary;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+

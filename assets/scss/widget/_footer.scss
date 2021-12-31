@@ -1,0 +1,154 @@
+/*--
+/*  6.1 - Footer CSS
+/*----------------------------------------*/
+
+// Footer Widget Wrapper
+.footer-widget-wrapper{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+// Footer Widget
+.footer-widget{
+    margin-top: 45px;
+
+    // Footer Widget Title
+    & .footer-widget-title{
+        font-size: 16px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        position: relative;
+        font-weight: 600;
+        color: $white;
+
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+
+    // Footer Newsletter
+    & .footer-newsletter{
+        & .title{
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            position: relative;
+            font-weight: 600;
+            color: $white;
+        }
+        & p{
+            color: #9d9d9d;
+            margin-bottom: 0;
+        }
+        & .newsletter{
+            position: relative;
+            max-width: 450px;
+            margin-top: 35px;
+
+            & input{
+                width: 100%;
+                height: 47px;
+                border: 1px solid #fff;
+                background: transparent;
+                color: #b1b1b1;
+                padding: 10px 120px 10px 30px;
+                display: inline-block;
+                width: 100%;
+                font-size: 13px;
+                border-radius: 30px;
+
+                &::placeholder{
+                    opacity: 1;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            & button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                text-transform: uppercase;
+                font-size: 0;
+                font-weight: 600;
+                font-size: 14px;
+                color: $dark;
+                background:  $white;
+                border: 0;
+                box-shadow: none;
+                padding: 0 20px;
+                line-height: 47px;
+                height: 47px;
+                border-radius: 0 30px 30px 0;
+                transition: all 300ms linear;
+
+                &:focus{
+                    outline: none;
+                }
+                
+                &:hover{
+                    background-color: $primary;
+                    border-color: $primary;
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    // Description Info
+    & .desc-info{
+        & p{
+            color: #9d9d9d;
+            font-size: 13px;
+            line-height: 1.84;
+            margin-bottom: 0;
+        }
+
+        & .info-items{
+            padding-top: 8px;
+
+            & .single-info{
+                display: flex;
+                padding-top: 12px;
+                
+                & i{
+                    font-size: 22px;
+                    color: $white;
+                    margin-right: 15px;
+                    flex-shrink: 0;
+                }
+                & p{}
+            }
+        }
+    }
+
+    // Widget Link
+    & .widget-link{
+        & li{
+            & + li{
+                margin-top: 10px;
+            }
+            & a{
+                font-size: 13px;
+                line-height: 1.84;
+                padding: 0;
+                display: block;
+                text-transform: capitalize;
+                color: #9d9d9d;
+                margin-bottom: 0px;
+                display: block;
+                position: relative;
+                transition: all 300ms linear;
+
+                &:hover{
+                    color: $primary;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+

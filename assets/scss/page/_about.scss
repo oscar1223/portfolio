@@ -1,0 +1,35 @@
+/*--
+/*  4.10 - About CSS
+/*----------------------------------------*/
+
+.about-content{
+    & .title{
+        font-size: 32px;
+        font-weight: 700;
+        color: $dark;
+        margin-bottom: 25px;
+
+        @media #{$large-mobile}{
+            font-size: 28px;
+        }
+    }
+    & p{}
+}
+
+// About Item
+.about-item{
+    & .title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $dark;
+        margin-bottom: 15px;
+
+        @media #{$large-mobile}{
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+

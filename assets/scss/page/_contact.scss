@@ -1,0 +1,137 @@
+/*--
+/*  4.19 - Contact CSS
+/*----------------------------------------*/
+
+
+// Contact Map 
+.contact-map{
+    & iframe{
+        width: 100%;
+        height: 360px;
+        display: flex;
+    }
+}
+
+// Contact Wrapper 
+.contact-wrapper{
+    margin-top: 45px;
+
+    & .contact-title{
+        font-size: 32px;
+        font-weight: 700;
+        color: $dark;
+        margin-bottom: 15px;
+
+        @media #{$large-mobile}{
+            font-size: 24px;
+        }
+    }
+}
+
+// Contact Form
+.contact-form{
+    padding-top: 10px;
+
+    & .single-form{
+        & textarea{
+            padding-top: 10px;
+            resize: none;
+            height: 275px;
+        }
+    }
+}
+
+// Form Message 
+.form-message{
+    margin-bottom: 0;
+    display: inline-block;
+
+    &.error,
+    &.success {
+        font-size:16px;
+        color:$dark;
+        background:#ddd;
+        padding:10px 15px;
+        margin-left:15px;
+        margin-top:15px;
+    }
+    &.error {
+        color:red
+    }
+}
+
+// Contact Information 
+.contact-information{
+    max-width: 500px;
+    background-color: #eaf1f9;
+    padding: 10px 80px 80px;
+    margin-top: 50px;
+    margin-left: auto;
+
+    @media #{$desktop-device}{
+        padding: 10px 60px 60px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media #{$small-mobile}{
+        padding: 10px 30px 30px;
+    }
+}
+
+// Single Information
+.single-information{
+    margin-top: 60px;
+    text-align: center;
+
+    @media #{$desktop-device}{
+        margin-top: 40px;
+    }
+    @media #{$small-mobile}{
+        margin-top: 20px;
+    }
+
+    & .title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $dark;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+
+        @media #{$small-mobile}{
+            font-size: 18px;
+        }
+
+        &::before{
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            background-color: #585b5d;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    & p{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0;
+        color: $dark;
+
+        & a{
+            color: #3f3f3f;
+            transition: all 0.3s linear;
+
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+
+
+
+

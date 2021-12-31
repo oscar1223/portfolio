@@ -1,0 +1,83 @@
+/*--
+/*  4.4 - Features CSS
+/*----------------------------------------*/
+
+// Features Wrapper  
+.features-wrapper{
+    background-color: $primary;
+    position: relative;
+    padding: 21px 0 41px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    
+    @media #{$tablet-device, $large-mobile}{
+        grid-template-columns: 50% 50%;
+    }
+    @media #{$small-mobile}{
+        grid-template-columns: 100%;
+    }
+
+    &.wrapper-02{
+        background-color: $white;
+        border: 1px solid #ebebeb;
+
+        @media #{$desktop-device}{
+            grid-template-columns: 50% 50%;
+        }
+    }
+}
+
+// Single Feartures 
+.single-feature{
+    display: flex;
+    padding: 0 10px 0 30px;
+    margin-top: 20px;
+
+    @media #{$small-mobile}{
+        padding: 0 20px;
+    }
+
+    & .feature-icon{
+        flex-shrink: 0;
+
+        & img{}
+    }
+    & .feature-content{
+        padding-left: 15px;
+
+        & .title{
+            line-height: 1;
+            color: $white;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 10px;            
+        }
+        & p{
+            line-height: 17px;
+            color: rgba($white, 0.75);
+            font-size: 13px;
+            font-weight: 300;
+            margin: 0;            
+        }
+    }
+
+    &.feature-white{
+        & .feature-content{
+            & .title{
+                color: $dark;          
+            }
+            & p{
+                color: rgba($dark, 0.75);         
+            }
+        }
+    }
+}
+
+
+
+
+
+

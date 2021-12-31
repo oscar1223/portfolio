@@ -1,0 +1,24 @@
+/*----------------------------------------*/
+/*  03. Header CSS
+/*----------------------------------------*/
+
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+@import "header/header-top";
+@import "header/header-bottom";
+@import "header/header-mobile";
+@import "header/offcanvas";
+@import "header/header-mendia";
+
+
+
+
+
+
+
