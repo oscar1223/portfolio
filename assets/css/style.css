@@ -3600,7 +3600,7 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 700;
   line-height: 3.1;
-  color: #888;
+  color: #288;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -3647,14 +3647,14 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #000;
-  background-color: #83bc2e;
-  border-color: #83bc2e;
+  background-color: #DC143C;
+  border-color: #DC143C;
 }
 
 .btn-primary:hover {
   color: #000;
-  background-color: #96c64d;
-  border-color: #8fc343;
+  background-color: #DC143C;
+  border-color: #DC143C;
 }
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -15683,7 +15683,7 @@ img {
 
 .section-title::before {
   content: "";
-  background: url(../images/bg-title.png) no-repeat;
+  
   background-position: center center;
   width: 315px;
   height: 25px;
@@ -23376,7 +23376,7 @@ blockquote p {
 }
 
 .copyright-payment .copyright p a {
-  color: red;
+  color: #DC143C;
 }
 
 .copyright-payment .copyright p a:hover {
