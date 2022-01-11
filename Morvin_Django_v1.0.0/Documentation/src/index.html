@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Getting Started"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+<body data-topbar="dark" data-spy="scroll" data-target=".right-side-nav" data-offset="175">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @@include("partials/topbar.html")
+
+        @@include("partials/sidebar.html")
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-xl-flex">
+
+                                        <div class="w-100">
+                                            <div class="p-lg-1">
+
+                                                <div id="intro" class="mb-5">
+                                                    <h4 class="mt-0 mb-4">Introduction</h4>
+                                                    <p>
+                                                        Morvin is a fully featured premium admin dashboard template in <strong>Django</strong> with developer-friendly codes.
+                                                        <br>  
+                                                    </p>
+                                                    <p>
+                                                        Morvin is an admin dashboard template that is a beautifully crafted, clean &amp; minimal designed admin template with <strong>Dark, Light </strong> Layouts with <strong>RTL</strong> supported.
+                                                    </p>
+                                                    <p>
+                                                        It will help your team moving faster and saving development costs and valuable time. If you’re a developer and looking for an admin dashboard that is fully responsive with Bootstrap and Django then you are at the right place to start your project using Morvin - Django Responsive Bootstrap ^5.0.0-beta2 Admin Dashboard.
+                                                    </p>
+                                                    <p>
+                                                        Morvin contains lots of new design widgets with responsive on all screens. Also, there are <strong>7 different</strong> types of <strong>Layouts</strong> we have added. It is very easy to change any layout in your existing running application by changing couple of lines code. We have written standard and developer-friendly code to increase performance.
+                                                    </p>
+                                                    <p>
+                                                        If you have any questions that are beyond the scope of this documentation, please feel free to contact us via our support page or for pre-purchase queries you can email us on <code>themesdesign.in@gmail.com</code>
+                                                    </p>
+                                                </div>
+
+                                                <div id="structure" class="mb-5">
+                                                    <h5 class="mt-0 mb-2">📁 Folder & Files Structure</h5>
+
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <p class="text-muted mb-4">
+                                                                <strong>Django</strong>
+                                                            </p>
+
+                                                            <pre class="mb-0">
+                                                                
+├── Admin
+├── StarterKit
+├── Documentation
+
+├── Admin   // Environments Folder
+
+    ├── components
+    ├── e_mail
+    ├── ecommerce
+    ├── extras
+    ├── layouts
+    ├── morvin
+    ├── src 
+        ├── fonts
+        ├── images
+        ├── js
+        ├── lang
+        └── scss 
+    ├── static 
+        ├── css
+        ├── fonts
+        ├── images
+        ├── js
+        ├── lang
+        └── libs 
+    ├── templates    
+    ├── db.sqlite3
+    ├── gulpfile.js
+    ├── manage.py
+    ├── package.json
+    └── yarn.lock
+    
+</pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div> <!-- end padding-->
+                                        </div>
+
+                                        <!-- Start right-side-nav -->
+                                        <div class="d-none d-xl-block">
+                                            <div class="right-side-nav">
+                                                <ul class="nav nav-pills flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="#intro" class="nav-link">Introduction</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#structure" class="nav-link">Folder & Files Structure</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end card body-->
+                            </div> <!-- end card-->
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            @@include("partials/footer.html")
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+    @@include("partials/vendor-scripts.html")
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
