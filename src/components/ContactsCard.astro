@@ -1,0 +1,30 @@
+---
+import Card from "./Card/index.astro";
+import { LINKS } from "../lib/constants";
+import Pulse from "./Pulse.astro";
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-4">
+  <div class="h-full">
+    <header class="flex items-center">
+      <h1 class="text-white text-xl font-bold">
+        Let's start working together!
+      </h1>
+    </header>
+    <address class="flex flex-col mt-4">
+      <h2 class="text-gray-500">Contact Details</h2>
+      <p>oscararauzp@gmail.com</p>
+      <p>Spain</p>
+    </address>
+    <div></div>
+    <div class="flex flex-col mt-4 w-fit">
+      <div class="flex justify-between w-full items-start mb-4">
+        <div class="flex flex-col">
+          <h2 class="text-white text-xl font-bold">Now</h2>
+        </div>
+        <Pulse />
+      </div>
+      <p class="text-xs">Currently working as freelancer</p>
+    </div>
+  </div>
+</Card>
