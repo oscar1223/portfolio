@@ -5,7 +5,6 @@ import IntroCard from "../components/IntroCard.astro";
 import ContactsCard from "../components/ContactsCard.astro";
 import TimeZone from "../components/TimeZoneCard.astro";
 import AboutMe from "../components/AboutMe.astro";
-import Projects from "../components/Projects.astro";
 import Globe from "../components/Globe";
 ---
 
@@ -67,7 +66,11 @@ mport Projects from "./projects.astro"; ---
       title="Projects"
       href="/projects"
     />
-    <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+    <Card
+      colSpan="md:col-span-1"
+      rowSpan="md:row-span-1"
+      href="https://sduk.io/"
+    >
       <p class="text-xs">
         © 2024 · Crafted with ♥️ using <a
           href="https://astro.build/"

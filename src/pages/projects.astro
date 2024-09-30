@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import PostRow from "../components/Blog/PostRow.astro";
+import Card from "../components/Card/index.astro";
 
 const posts = (await getCollection("blog"))?.sort(
   (blogEntryA, blogEntryB) =>
@@ -20,7 +21,7 @@ const posts = (await getCollection("blog"))?.sort(
 </script>
 
 <Layout
-  title="Óscar Arauz - Blog"
+  title="Óscar Arauz - Projects"
   description="Software developer with strong focus on the AI and Blockchain"
 >
   <main
@@ -31,17 +32,31 @@ const posts = (await getCollection("blog"))?.sort(
       class="text-white bg-neutral-900 hover:bg-neutral-800 px-4 py-2 mb-8 border-1 border-solid border-neutral-600 rounded-lg"
       >Back</a
     >
-    <h1 class="text-4xl font-bold mb-4 text-neutral-100">Posts</h1>
+    <h1 class="text-4xl font-bold mb-4 text-neutral-100">Projects</h1>
     <ul class="w-full">
-      {
-        posts?.map((post) => (
-          <PostRow
-            title={post.data.title || "No title"}
-            date={post.data.pubDate || new Date()}
-            url={post.slug}
-          />
-        ))
-      }
+      <Card
+        colSpan="md:col-span-1"
+        rowSpan="md:row-span-1"
+        href="https://sduk.io/"
+      >
+        <p class="text-yellow-500">SnarkyDuck</p>
+      </Card>
+      <br />
+      <Card
+        colSpan="md:col-span-1"
+        rowSpan="md:row-span-1"
+        href="https://kubecoin.org/"
+      >
+        <p class="text-pink-500">Kubecoin</p>
+      </Card>
+      <br />
+      <Card
+        colSpan="md:col-span-1"
+        rowSpan="md:row-span-1"
+        href="https://flykube.com/es?srsltid=AfmBOorqG1frMcVghqciygnDQj_6Nr7hASZTSNTw98Cz9oGLIqWtmOTo"
+      >
+        <p class="text-red-500">Flykube</p>
+      </Card>
     </ul>
   </main>
 </Layout>
