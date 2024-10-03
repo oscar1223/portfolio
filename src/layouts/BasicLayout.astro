@@ -13,12 +13,13 @@ interface Props {
     pubDate: string;
     minutesRead: string;
   };
+  dataLayer: any;
 }
 
 const { title, description, page, slug, frontmatter } = Astro.props;
 const image =
   page === "travel"
-    ? `${Astro.url.origin}/globe_preview.webp"`
+    ? `${Astro.url.origin}/globe_preview.webp` // Comilla doble extra eliminada
     : `${Astro.url.origin}/og-image.png`;
 
 const schema =
@@ -97,7 +98,7 @@ const schema =
     <meta property="og:url" content={Astro.url.origin} />
     <meta
       property="og:image"
-      content={image || "https://gianmarco.xyz/og-image.png"}
+      content={image || "https://arauz.dev/og-image.png"}
     />
     <!-- Basic Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -105,11 +106,21 @@ const schema =
     <meta name="twitter:description" content={description} />
     <meta
       name="twitter:image"
-      content={image || "https://gianmarco.xyz/og-image.png"}
+      content={image || "https://arauz.dev/og-image.png"}
     />
 
     <link rel="preconnect" href="https://cdn.fontshare.com" />
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZBFHLS9JW"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EZBFHLS9JW");
+    </script>
   </head>
   <body
     class="bg-darkslate-700 md:h-screen flex flex-col justify-center items-center"

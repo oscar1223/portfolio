@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
+    "@types/google-publisher-tag": "^1.20240902.0",
     "@unocss/astro": "^0.61.3",
     "@unocss/postcss": "^0.61.3",
     "@unocss/preset-uno": "^0.61.3",
