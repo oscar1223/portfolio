@@ -27,14 +27,14 @@ const schema =
     ? {
         "@context": "http://schema.org",
         "@type": "Person",
-        name: "Gianmarco",
-        url: "https://gianmarco.xyz",
+        name: "Oscar",
+        url: "https://arauz.dev",
         sameAs: [
-          "https://www.linkedin.com/in/gianmarco-cavallo",
-          "https://github.com/Ladvace",
+          "https://www.linkedin.com/in/oscararauzperez",
+          "https://github.com/oscar1223",
         ],
-        image: "https://gianmarco.xyz/og-image.png",
-        jobTitle: "Freelance Frontend Developer",
+        image: "https://arauz.dev/og-image.png",
+        jobTitle: "Freelance FullStack Developer",
         worksFor: {
           "@type": "Organization",
           name: "Self-Employed",
@@ -54,18 +54,18 @@ const schema =
         "@type": "BlogPosting",
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `https://gianmarco.xyz/blog/${slug}`,
+          "@id": `https://arauz.dev/blog/${slug}`,
         },
         headline: frontmatter?.title || title,
         description: frontmatter?.description || title,
-        image: "https://gianmarco.xyz/og-image.png", //TODO: dynamic
+        image: "https://arauz.dev/og-image.png", //TODO: dynamic
         author: {
           "@type": "Person",
-          name: "Gianmarco",
-          url: "https://gianmarco.xyz",
+          name: "Oscar",
+          url: "https://arauz.dev.xyz",
           sameAs: [
             "https://www.linkedin.com/in/gianmarco-cavallo",
-            "https://github.com/Ladvace",
+            "https://github.com/oscar1223",
           ],
         },
         publisher: {
@@ -73,7 +73,7 @@ const schema =
           name: "Gianmarco",
           logo: {
             "@type": "ImageObject",
-            url: "https://gianmarco.xyz/og-image.png",
+            url: "https://arauz.dev/og-image.png",
           },
         },
         datePublished: frontmatter?.pubDate || new Date().toISOString(),
